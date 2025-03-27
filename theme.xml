@@ -17,28 +17,28 @@
     </image>
   </view>
 
-    <view name="system">    
-      <image name="help-left">
-        <pos>0 1</pos>
-        <origin>0 1</origin>
-        <size>${helpSize}</size>
-        <path>${helpLeftPath}</path>
-      </image>
-    </view>
+  <view name="system">    
+    <image name="help-left">
+      <pos>0 1</pos>
+      <origin>0 1</origin>
+      <size>${helpSize}</size>
+      <path>${helpLeftPath}</path>
+    </image>
+  </view>
 
-    <variant name="boxart">
-      <aspectRatio name="19.5:9, 16:9, 16:10">
-          <view name="gamelist">
-            <image name="game-cover">
-              <pos>${boxartPosition}</pos>
-              <origin>1 0.5</origin>
-              <maxSize>0.3 0.733333333333333</maxSize>
-              <cornerRadius>0.02</cornerRadius>
-              <imageType>cover</imageType>
-            </image>
-          </view>
-      </aspectRatio>
-    </variant>
+  <variant name="boxart">
+    <aspectRatio name="19.5:9, 16:9, 16:10">
+        <view name="gamelist">
+          <image name="game-cover">
+            <pos>${boxartPosition}</pos>
+            <origin>1 0.5</origin>
+            <maxSize>0.3 0.733333333333333</maxSize>
+            <cornerRadius>0.02</cornerRadius>
+            <imageType>cover</imageType>
+          </image>
+        </view>
+    </aspectRatio>
+  </variant>
 
   <view name="system,gamelist">
     <textlist name="item-list">
