@@ -1,0 +1,180 @@
+<theme>
+  <view name="system,gamelist">
+    <textlist name="item-list">
+      <origin>0 0</origin>
+      <indicators>ascii</indicators>
+      <fontPath>./BPreplayBold-unhinted.otf</fontPath>
+    </textlist>
+
+    <image name="help-left">
+      <pos>${leftX} 0.958</pos>
+      <origin>-1 1</origin>
+      <size>${helpSize}</size>
+    </image>
+
+    <image name="help-right-system">
+      <pos>${rightX} 0.958</pos>
+      <origin>1 1</origin>
+      <size>${helpSize}</size>
+    </image>
+  </view>
+
+  <variant name="boxart">
+    <view name="gamelist">    
+      <image name="game-cover">
+        <pos>${coverPosition}</pos>
+        <origin>1 0.5</origin>
+        <maxSize>0.32 0.75</maxSize>
+        <imageType>cover</imageType>      
+      </image>
+    </view>
+  </variant>
+
+  <view name="system">
+    <image name="help-left">
+      <path>${leftPath}</path>
+    </image>
+  </view>
+
+  <aspectRatio name="19.5:9, 16:9, 16:10, 4:3">
+    <view name="gamelist">
+      <image name="help-left">
+        <path>${leftPath}</path>
+      </image>
+    </view>
+  </aspectRatio>
+
+  <view name="system">
+    <image name="help-right-system">
+      <path>${rightSystemPath}</path>
+    </image>
+  </view>
+
+  <view name="gamelist">
+    <image name="help-right-system">
+      <path>${rightGamesPath}</path>
+    </image>
+  </view>
+
+  <view name="system,gamelist">
+    <textlist name="item-list">
+      <pos>0.062 0.043</pos>
+      <selectedBackgroundCornerRadius>0.5</selectedBackgroundCornerRadius>
+      <lineSpacing>1.875</lineSpacing>
+    </textlist>
+  </view>
+
+  <view name="system,gamelist">
+    <textlist name="item-list">
+      <selectedBackgroundMargins>${marginSize} ${marginSize}</selectedBackgroundMargins>
+      <primaryColor>${foregroundColor}</primaryColor>
+      <secondaryColor>${foregroundColor}</secondaryColor>
+      <selectorColor>${transparentColor}</selectorColor>
+      <selectedColor>${backgroundColor}</selectedColor>
+      <selectedBackgroundColor>${foregroundColor}</selectedBackgroundColor>
+      <selectorHeight>${selectorHeightSize}</selectorHeight>
+      <fontSize>${listFontSize}</fontSize>
+    </textlist>
+  </view>
+
+  <variables>
+    <leftX>0.031</leftX>
+    <rightX>0.969</rightX>
+    <marginSize>0.03</marginSize>
+    <coverPosition>0.965 0.415</coverPosition>
+    <helpSize>0 0.495</helpSize>
+    <leftPath>./help-left.svg</leftPath>
+    <rightSystemPath>./help-right-system.svg</rightSystemPath>
+    <rightGamesPath>./help-right-games.svg</rightGamesPath>
+    <transparentColor>00000000</transparentColor>
+    <backgroundColor>000000FF</backgroundColor>
+    <foregroundColor>F7FBF7FF</foregroundColor>
+    <selectorHeightSize>0.12</selectorHeightSize>
+    <listFontSize>0.066666666666667</listFontSize>
+    <textListHeight>0.8</textListHeight>
+  </variables>
+
+  <colorScheme name="symbol-prompts">
+      <variables>
+        <rightSystemPath>./help-right-system-psx.svg</rightSystemPath>
+        <rightGamesPath>./help-right-games-psx.svg</rightGamesPath>        
+      </variables>
+  </colorScheme>
+
+  <colorScheme name="no-prompts">
+      <variables>
+        <coverPosition>0.965 0.5</coverPosition>
+        <leftPath>.</leftPath>
+        <rightSystemPath>.</rightSystemPath>
+        <rightGamesPath>.</rightGamesPath>        
+      </variables>
+  </colorScheme>
+
+  <fontSize name="medium">
+    <variables>
+      <leftX>0.035</leftX>
+      <rightX>0.964</rightX>
+      <marginSize>0.02625</marginSize>
+      <helpSize>0 0.43312502</helpSize>
+      <listFontSize>0.058333333333334</listFontSize>
+      <selectorHeightSize>0.105</selectorHeightSize>
+    </variables>
+  </fontSize>
+
+  <fontSize name="small">
+    <variables>
+      <leftX>0.039</leftX>
+      <rightX>0.96</rightX>
+      <marginSize>0.0225</marginSize>
+      <helpSize>0 0.37124997</helpSize>
+      <listFontSize>0.05</listFontSize>
+      <selectorHeightSize>0.09</selectorHeightSize>
+    </variables>
+  </fontSize>
+
+  <colorScheme name="no-prompts">
+    <variables>
+      <textListHeight>0.95</textListHeight>
+    </variables>
+  </colorScheme>
+  
+  <variant name="boxart">
+    <view name="system">
+      <textlist name="item-list">
+        <size>0.876 ${textListHeight}</size>
+      </textlist>
+    </view>
+
+    <view name="gamelist">
+      <textlist name="item-list">
+        <size>0.526 ${textListHeight}</size>
+      </textlist>
+    </view>
+  </variant>
+  
+  <variant name="default">
+    <view name="system,gamelist">
+      <textlist name="item-list">
+        <size>0.876 ${textListHeight}</size>
+      </textlist>
+    </view>
+  </variant>
+
+  <view name="system,gamelist">
+    <helpsystem name="help">
+      <pos>2 2</pos>
+      <textColor>${transparentColor}</textColor>
+      <iconColor>${transparentColor}</iconColor>
+    </helpsystem>
+  </view>
+
+  <view name="all">
+    <sound name="systembrowse"><path>.</path></sound>
+    <sound name="quicksysselect"><path>.</path></sound>
+    <sound name="select"><path>.</path></sound>
+    <sound name="back"><path>.</path></sound>
+    <sound name="scroll"><path>.</path></sound>
+    <sound name="favorite"><path>.</path></sound>
+    <sound name="launch"><path>.</path></sound>
+  </view>
+</theme>
