@@ -6,5 +6,5 @@ Minimal ES-DE theme tested for Desktop and Android. No relationship to prior ES-
 - 3 scale settings
 - 3 prompt settings (none, letters, symbols)
 - Reworked help system overrides ES-DE default
-- No sound, surpressed animation
+- Sound and animation suppression
 - Optional box art element
