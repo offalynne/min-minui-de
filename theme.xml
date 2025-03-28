@@ -126,10 +126,16 @@
   <colorScheme name="no-prompts">
     <variables>
       <textListHeight>0.95</textListHeight>
-  </variables>
+    </variables>
   </colorScheme>
   
   <variant name="boxart">
+    <view name="system">
+      <textlist name="item-list">
+        <size>0.876 ${textListHeight}</size>
+      </textlist>
+    </view>
+
     <view name="gamelist">
       <textlist name="item-list">
         <size>0.526 ${textListHeight}</size>
