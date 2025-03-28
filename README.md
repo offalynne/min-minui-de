@@ -1,6 +1,6 @@
 # min-minui-de
-Minimal ES-DE theme tested for Desktop and Android. No relationship to prior ES-DE themes. Styled after [MinUI frontend by shauninman](https://github.com/shauninman/MinUI). Font is [BPreplay by Gtrianta](https://backpacker.gr/fonts/6)
-
+Minimal ES-DE theme tested for Desktop and Android. No relationship to prior ES-DE themes. Styled after [MinUI frontend](https://github.com/shauninman/MinUI) by [shauninman](https://github.com/shauninman). Font is [BPreplay](https://backpacker.gr/fonts/6) by [Gtrianta](https://github.com/Gtrianta).
+.
 ## Features
 - Closer to source theme
 - 3 scale settings
