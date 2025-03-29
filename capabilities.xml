@@ -6,11 +6,11 @@
    <fontSize>large</fontSize>
 
    <variant name="default">
-        <label language="en_US">Textlist Only</label>
+        <label language="en_US">Text</label>
         <selectable>true</selectable>
    </variant>
    <variant name="boxart">
-        <label language="en_US">Textlist with Box Art</label>
+        <label language="en_US">Text with Box Art</label>
         <mediaType>cover</mediaType>
         <selectable>true</selectable>
     </variant>
