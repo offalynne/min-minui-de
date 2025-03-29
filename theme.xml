@@ -7,13 +7,13 @@
     </textlist>
 
     <image name="help-left">
-      <pos>0.031 0.958</pos>
+      <pos>${leftX} 0.958</pos>
       <origin>-1 1</origin>
       <size>${helpSize}</size>
     </image>
 
     <image name="help-right-system">
-      <pos>0.969 0.958</pos>
+      <pos>${rightX} 0.958</pos>
       <origin>1 1</origin>
       <size>${helpSize}</size>
     </image>
@@ -60,13 +60,13 @@
     <textlist name="item-list">
       <pos>0.062 0.043</pos>
       <selectedBackgroundCornerRadius>0.5</selectedBackgroundCornerRadius>
-      <selectedBackgroundMargins>0.03 0.03</selectedBackgroundMargins>
       <lineSpacing>1.875</lineSpacing>
     </textlist>
   </view>
 
   <view name="system,gamelist">
     <textlist name="item-list">
+      <selectedBackgroundMargins>${marginSize} ${marginSize}</selectedBackgroundMargins>
       <primaryColor>${foregroundColor}</primaryColor>
       <secondaryColor>${foregroundColor}</secondaryColor>
       <selectorColor>${transparentColor}</selectorColor>
@@ -78,6 +78,9 @@
   </view>
 
   <variables>
+    <leftX>0.031</leftX>
+    <rightX>0.969</rightX>
+    <marginSize>0.03</marginSize>
     <coverPosition>0.965 0.415</coverPosition>
     <helpSize>0 0.495</helpSize>
     <leftPath>./help-left.svg</leftPath>
@@ -109,6 +112,9 @@
 
   <fontSize name="medium">
     <variables>
+      <leftX>0.035</leftX>
+      <rightX>0.964</rightX>
+      <marginSize>0.02625</marginSize>
       <helpSize>0 0.43312502</helpSize>
       <listFontSize>0.058333333333334</listFontSize>
       <selectorHeightSize>0.105</selectorHeightSize>
@@ -117,6 +123,9 @@
 
   <fontSize name="small">
     <variables>
+      <leftX>0.039</leftX>
+      <rightX>0.96</rightX>
+      <marginSize>0.0225</marginSize>
       <helpSize>0 0.37124997</helpSize>
       <listFontSize>0.05</listFontSize>
       <selectorHeightSize>0.09</selectorHeightSize>
