@@ -165,7 +165,7 @@
 
   <colorScheme name="no-prompts">
     <variables>
-      <textListHeight>0.95</textListHeight>
+      <textListHeight>0.9</textListHeight>
     </variables>
   </colorScheme>
   
