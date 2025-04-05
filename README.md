@@ -1,18 +1,18 @@
 # min-minui-de
-Minimal ES-DE theme tested for Desktop and Android. Styled after [MinUI frontend](https://github.com/shauninman/MinUI) by [@shauninman](https://github.com/shauninman).<br>Font is [BPreplay](https://backpacker.gr/fonts/6) by [@Gtrianta](https://github.com/Gtrianta).
+[ES-DE theme](https://gitlab.com/es-de/emulationstation-de) for desktop and Android styled after [@shauninman](https://github.com/shauninman)'s [MinUI frontend](https://github.com/shauninman/MinUI). Font is [@Gtrianta](https://github.com/Gtrianta)'s [BPreplay](https://backpacker.gr/fonts/6).
 
 ![Theme Screenshot](https://github.com/user-attachments/assets/d93a3abf-6c7d-4ea5-bcf1-05404ee635a1)
 
-
-## Features
-- Closely matches [source interface](https://github.com/shauninman/MinUI?tab=readme-ov-file#minui)
-- Three scale settings (Small, Medium, Large)
-- Three prompt settings (Letters, Symbols, None)
-- Reworked help system overrides ES-DE default
-- Sound and UI animation suppression
-- Extensive [aspect ratio](https://github.com/offalynne/min-minui-de/blob/main/capabilities.xml#L28-L35) support
+- Scale options: Large (shown), Medium, Small
+- Prompt options: Letters (shown), Symbols, None
 - Optional box art element
-- Battery indicator
+
+## Downloads
+- [ES-DE v3.2.0+ (latest)](https://github.com/offalynne/min-minui-de/archive/refs/heads/main.zip)
+- [ES-DE v<3.2.0](https://github.com/offalynne/min-minui-de/archive/refs/heads/pre_2.3.zip)
+
+Extract to folder in `./ES-DE/ES-DE/themes`
 
 ## Alternatives
 - [minui-es-de](https://github.com/anthonycaccese/minui-menu-es-de)
+- [es-theme-minuark-4x3](https://github.com/offalynne/es-theme-minuark-4x3)
