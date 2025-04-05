@@ -118,7 +118,7 @@
     <selectorHeightSize>0.12</selectorHeightSize>
     <listFontSize>0.066666666666667</listFontSize>
     <textListHeight>0.8</textListHeight>
-    <statusHeight>0.12</statusHeight>
+    <statusHeight>0.125</statusHeight>
     <helpDimmedY>1</helpDimmedY>
   </variables>
 
@@ -147,7 +147,7 @@
       <helpHeight>0.43312502</helpHeight>
       <listFontSize>0.058333333333334</listFontSize>
       <selectorHeightSize>0.105</selectorHeightSize>
-      <statusHeight>0.104</statusHeight>
+      <statusHeight>0.109375</statusHeight>
     </variables>
   </fontSize>
 
@@ -159,7 +159,7 @@
       <helpHeight>0.37124997</helpHeight>
       <listFontSize>0.05</listFontSize>
       <selectorHeightSize>0.09</selectorHeightSize>
-      <statusHeight>0.09</statusHeight>
+      <statusHeight>0.09375</statusHeight>
     </variables>
   </fontSize>
 
@@ -172,7 +172,7 @@
   <variant name="boxart">
     <view name="system">
       <textlist name="item-list">
-        <size>0.72 ${textListHeight}</size>
+        <size>0.7225 ${textListHeight}</size>
       </textlist>
     </view>
 
@@ -190,7 +190,7 @@
   <variant name="default">
     <view name="system,gamelist">
       <textlist name="item-list">
-        <size>0.72 ${textListHeight}</size>
+        <size>0.7225 ${textListHeight}</size>
       </textlist>
     </view>
   </variant>
