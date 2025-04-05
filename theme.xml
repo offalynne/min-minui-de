@@ -85,6 +85,7 @@
     <textlist name="item-list">
       <pos>0.062 0.043</pos>
       <selectedBackgroundCornerRadius>0.5</selectedBackgroundCornerRadius>
+      <textHorizontalScrolling>false</textHorizontalScrolling>
       <lineSpacing>1.875</lineSpacing>
     </textlist>
   </view>
@@ -171,7 +172,7 @@
   <variant name="boxart">
     <view name="system">
       <textlist name="item-list">
-        <size>0.725 ${textListHeight}</size>
+        <size>0.72 ${textListHeight}</size>
       </textlist>
     </view>
 
@@ -189,7 +190,7 @@
   <variant name="default">
     <view name="system,gamelist">
       <textlist name="item-list">
-        <size>0.725 ${textListHeight}</size>
+        <size>0.72 ${textListHeight}</size>
       </textlist>
     </view>
   </variant>
@@ -205,6 +206,14 @@
       <textColor>${backgroundColor}</textColor>
       <backgroundColor>${backgroundColor}</backgroundColor>
     </helpsystem>
+
+    <clock name="clock">
+      <origin>0.5 0</origin>
+      <pos>0.5 2</pos>
+      <color>${backgroundColor}</color>
+      <backgroundColor>${backgroundColor}</backgroundColor>
+      <opacity>0</opacity>
+    </clock>
   </view>
 
   <view name="all">
