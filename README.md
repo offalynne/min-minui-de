@@ -1,7 +1,7 @@
 # min-minui-de
 Minimal [ES-DE](https://gitlab.com/es-de/emulationstation-de) theme for desktop and Android styled after [@shauninman](https://github.com/shauninman)'s [MinUI frontend](https://github.com/shauninman/MinUI). Font is [@Gtrianta](https://github.com/Gtrianta)'s [BPreplay](https://backpacker.gr/fonts/6).
 
-![Theme Screenshot](https://github.com/user-attachments/assets/fcf18030-9a17-47b8-9118-5b357774cb71)
+![Theme Screenshot](https://github.com/user-attachments/assets/edda4a43-066a-4ef2-9c59-f93d288af9d7)
 
 - Scale: Large (shown), Medium, Small
 - Prompts: Letters (shown), Symbols, None
@@ -12,7 +12,7 @@ Minimal [ES-DE](https://gitlab.com/es-de/emulationstation-de) theme for desktop 
 - [ES-DE legacy](https://github.com/offalynne/min-minui-de/archive/refs/heads/pre_3.2.zip)
 
 ## Setup
-- Extract to new folder in `./ES-DE/ES-DE/themes`<br>
+- Extract to `./ES-DE/ES-DE/themes`
 - Move `splash.svg` or `…_alt.svg` to `./ES-DE/resources/graphics/splash.svg`
 
 ## Alternatives
