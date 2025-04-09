@@ -1,31 +1,58 @@
 <theme>
   <view name="system,gamelist">
+    <systemstatus name="status">
+      <scope>view</scope>
+      <entries>battery</entries>
+      <origin>1 0</origin>
+      <pos>${rightX} 0.043</pos>
+      <height>${statusHeight}</height>
+      <fontPath>./res/AdobeBlank.otf</fontPath>
+      <textRelativeScale>0.5</textRelativeScale>
+      <customIcon icon="icon_battery_charging">./res/battery-charging.svg</customIcon>
+      <customIcon icon="icon_battery_low">./res/battery-low.svg</customIcon>
+      <customIcon icon="icon_battery_medium">./res/battery-medium.svg</customIcon>
+      <customIcon icon="icon_battery_high">./res/battery-high.svg</customIcon>
+      <customIcon icon="icon_battery_full">./res/battery-full.svg</customIcon>
+    </systemstatus>
+  </view>
+
+  <view name="system,gamelist">
     <textlist name="item-list">
       <origin>0 0</origin>
-      <indicators>ascii</indicators>
-      <fontPath>./BPreplayBold-unhinted.otf</fontPath>
+      <indicators>none</indicators>
+      <fontPath>./res/BPreplayBold-unhinted-lowered.otf</fontPath>
     </textlist>
+
+    <!-- 
+    <image name="guide">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./guide.png</path>
+    </image>
+     -->
 
     <image name="help-left">
       <pos>${leftX} 0.958</pos>
       <origin>-1 1</origin>
-      <size>${helpSize}</size>
+      <size>0 ${helpHeight}</size>
     </image>
 
     <image name="help-right-system">
       <pos>${rightX} 0.958</pos>
       <origin>1 1</origin>
-      <size>${helpSize}</size>
+      <size>0 ${helpHeight}</size>
     </image>
   </view>
 
   <variant name="boxart">
     <view name="gamelist">    
       <image name="game-cover">
-        <pos>${coverPosition}</pos>
+        <pos>${rightX} ${coverPosition}</pos>
         <origin>1 0.5</origin>
         <maxSize>0.32 0.75</maxSize>
-        <imageType>cover</imageType>      
+        <imageType>cover</imageType>
+        <cornerRadius>0.015</cornerRadius>
+        <renderDuringTransitions>true</renderDuringTransitions>
       </image>
     </view>
   </variant>
@@ -60,6 +87,7 @@
     <textlist name="item-list">
       <pos>0.062 0.043</pos>
       <selectedBackgroundCornerRadius>0.5</selectedBackgroundCornerRadius>
+      <textHorizontalScrolling>false</textHorizontalScrolling>
       <lineSpacing>1.875</lineSpacing>
     </textlist>
   </view>
@@ -81,32 +109,35 @@
     <leftX>0.031</leftX>
     <rightX>0.969</rightX>
     <marginSize>0.03</marginSize>
-    <coverPosition>0.965 0.415</coverPosition>
-    <helpSize>0 0.495</helpSize>
-    <leftPath>./help-left.svg</leftPath>
-    <rightSystemPath>./help-right-system.svg</rightSystemPath>
-    <rightGamesPath>./help-right-games.svg</rightGamesPath>
+    <coverPosition>0.415</coverPosition>
+    <helpHeight>0.495</helpHeight>
+    <leftPath>./res/help-left.svg</leftPath>
+    <rightSystemPath>./res/help-right-system.svg</rightSystemPath>
+    <rightGamesPath>./res/help-right-games.svg</rightGamesPath>
     <transparentColor>00000000</transparentColor>
     <backgroundColor>000000FF</backgroundColor>
     <foregroundColor>F7FBF7FF</foregroundColor>
     <selectorHeightSize>0.12</selectorHeightSize>
     <listFontSize>0.066666666666667</listFontSize>
     <textListHeight>0.8</textListHeight>
+    <statusHeight>0.125</statusHeight>
+    <helpDimmedY>1</helpDimmedY>
   </variables>
 
   <colorScheme name="symbol-prompts">
       <variables>
-        <rightSystemPath>./help-right-system-psx.svg</rightSystemPath>
-        <rightGamesPath>./help-right-games-psx.svg</rightGamesPath>        
+        <rightSystemPath>./res/help-right-system-psx.svg</rightSystemPath>
+        <rightGamesPath>./res/help-right-games-psx.svg</rightGamesPath>        
       </variables>
   </colorScheme>
 
   <colorScheme name="no-prompts">
       <variables>
-        <coverPosition>0.965 0.5</coverPosition>
+        <coverPosition>0.5</coverPosition>
         <leftPath>.</leftPath>
         <rightSystemPath>.</rightSystemPath>
-        <rightGamesPath>.</rightGamesPath>        
+        <rightGamesPath>.</rightGamesPath>
+        <helpDimmedY>2</helpDimmedY>
       </variables>
   </colorScheme>
 
@@ -115,9 +146,10 @@
       <leftX>0.035</leftX>
       <rightX>0.964</rightX>
       <marginSize>0.02625</marginSize>
-      <helpSize>0 0.43312502</helpSize>
+      <helpHeight>0.43312502</helpHeight>
       <listFontSize>0.058333333333334</listFontSize>
       <selectorHeightSize>0.105</selectorHeightSize>
+      <statusHeight>0.109375</statusHeight>
     </variables>
   </fontSize>
 
@@ -126,22 +158,23 @@
       <leftX>0.039</leftX>
       <rightX>0.96</rightX>
       <marginSize>0.0225</marginSize>
-      <helpSize>0 0.37124997</helpSize>
+      <helpHeight>0.37124997</helpHeight>
       <listFontSize>0.05</listFontSize>
       <selectorHeightSize>0.09</selectorHeightSize>
+      <statusHeight>0.09375</statusHeight>
     </variables>
   </fontSize>
 
   <colorScheme name="no-prompts">
     <variables>
-      <textListHeight>0.95</textListHeight>
+      <textListHeight>0.9</textListHeight>
     </variables>
   </colorScheme>
   
   <variant name="boxart">
     <view name="system">
       <textlist name="item-list">
-        <size>0.876 ${textListHeight}</size>
+        <size>0.7225 ${textListHeight}</size>
       </textlist>
     </view>
 
@@ -149,23 +182,40 @@
       <textlist name="item-list">
         <size>0.526 ${textListHeight}</size>
       </textlist>
+
+      <systemstatus name="status">
+        <opacity>0</opacity>
+      </systemstatus>
     </view>
   </variant>
   
   <variant name="default">
     <view name="system,gamelist">
       <textlist name="item-list">
-        <size>0.876 ${textListHeight}</size>
+        <size>0.7225 ${textListHeight}</size>
       </textlist>
     </view>
   </variant>
 
   <view name="system,gamelist">
     <helpsystem name="help">
-      <pos>2 2</pos>
-      <textColor>${transparentColor}</textColor>
-      <iconColor>${transparentColor}</iconColor>
+      <fontSize>1.5</fontSize>
+      <origin>0.5 0</origin>
+      <pos>0.5 2</pos>
+      <posDimmed>0.5 ${helpDimmedY}</posDimmed>
+      <backgroundHorizontalPadding>0.2 0</backgroundHorizontalPadding>
+      <backgroundVerticalPadding>0.2 0</backgroundVerticalPadding >
+      <textColor>${backgroundColor}</textColor>
+      <backgroundColor>${backgroundColor}</backgroundColor>
     </helpsystem>
+
+    <clock name="clock">
+      <origin>0.5 0</origin>
+      <pos>0.5 2</pos>
+      <color>${backgroundColor}</color>
+      <backgroundColor>${backgroundColor}</backgroundColor>
+      <opacity>0</opacity>
+    </clock>
   </view>
 
   <view name="all">
